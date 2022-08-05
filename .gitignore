@@ -1,0 +1,23 @@
+#local env files
+.env*
+# The (*) at the end of .env excludes any file with the name that starts with ".env" 
+# so ".env.local" and ".env.production.local" rules are redundant.
+# .env.local - no need to include this
+# .env.production.local - no need to include this
+
+#Mac OS
+.DS_Store
+
+#VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
