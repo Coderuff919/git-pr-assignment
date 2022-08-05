@@ -1,7 +1,9 @@
 #local env files
 .env*
-.env.local
-.env.production.local
+# The (*) at the end of .env excludes any file with the name that starts with ".env" 
+# so ".env.local" and ".env.production.local" rules are redundant.
+# .env.local - no need to include this
+# .env.production.local - no need to include this
 
 #Mac OS
 .DS_Store
